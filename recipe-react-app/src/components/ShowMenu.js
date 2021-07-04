@@ -12,11 +12,11 @@ const ShowMenu = ({cook,ingredient}) => {
                       return(
                           <li key={eachCook.menu}>
                               <p>{eachCook.menu[0]}</p>
-                              <button value={eachCook.menu[0]} 
+                              <button className="btn" value={eachCook.menu[0]} 
                               onClick={(event)=> setSelectedMenu(event.target.value)}  >⭐</button>
 
                               <p>{eachCook.menu[1]}</p>
-                              <button value={eachCook.menu[1]} 
+                              <button className="btn" value={eachCook.menu[1]} 
                               onClick={(event)=> setSelectedMenu(event.target.value)}  >⭐</button>
 
                               <FavMenu  selectedMenu={selectedMenu}/>
